@@ -48,16 +48,22 @@ int main()
         {
             printf("%d",n+1);
         }
-        else if (k==0)
-        {
-            printf("%d",n+10);
-        }
+       
    
     }
    else
    {
-       k=c-a;
-       printf("%d",n+k);
+       k=c-a; 
+        if (k==0)
+        {
+            printf("%d",n+10);
+        }
+        else
+        {
+            printf("%d",n+k);
+        }
+        
+       
    }
    
    
