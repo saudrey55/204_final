@@ -8,8 +8,9 @@ int main()
    int a;
    
        a=n%10;
-   if (a>c)
-   {
+        
+    if (a>c)
+    {
       k=a-c;
 
         if (k==1)
@@ -51,8 +52,15 @@ int main()
        
    
     }
-   else
-   {
+    else if (n<c)
+    {
+       k=c-n;
+
+       printf("%d",n+k);
+    }
+
+     else
+    {
        k=c-a; 
         if (k==0)
         {
@@ -62,9 +70,8 @@ int main()
         {
             printf("%d",n+k);
         }
-        
-       
-   }
+    }
+   
    
    
 }

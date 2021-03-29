@@ -1,1 +1,1 @@
- printf("%d",z[j]);
+ printf("%d\n",p[0]);
