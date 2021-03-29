@@ -7,8 +7,7 @@ int main()
     scanf("%d",&n);
 
     int z[n],x[n];
-    x[n]=0;
-
+   
     for ( i = 0; i <n ; i++)
     {
        scanf("%d",&z[i]);
@@ -16,18 +15,15 @@ int main()
     
     for ( i = 0; i < n; i++)
     {
-        j=1;
-        if (z[i]==j)
-        {
-            x[i]=x[i+1];
-        }
-        else
-        {
-            j++;
-            continue;
-        }
+       for ( j = 1; j <= n; j++)
+       {
+           if (j==z[i])
+           {
+               x[j]++;
+           }
+       }
         
     }
     
-    
+
 }
