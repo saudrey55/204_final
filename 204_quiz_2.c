@@ -6,7 +6,8 @@ int main()
 
     scanf("%d",&n);
 
-    int z[n];
+    int z[n],x[n];
+    x[n]=0;
 
     for ( i = 0; i <n ; i++)
     {
@@ -18,11 +19,15 @@ int main()
         j=1;
         if (z[i]==j)
         {
-            
+            x[i]=x[i+1];
         }
-        
+        else
+        {
+            j++;
+            continue;
+        }
         
     }
     
-
+    
 }
