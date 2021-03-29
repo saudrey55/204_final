@@ -16,8 +16,8 @@ int main()
        }
        
     }
-
-   /* for ( i = 0; i < b; i++)
+printf("\n");
+    for ( i = 0; i < b; i++)
     {
         for ( j = 0; j < b; j++)
         {
@@ -25,7 +25,7 @@ int main()
         }
         
     }
-    
+   printf("\n"); 
     for ( i = 0; i < c ; i++)
     {
         for ( j = 0; j < c; j++)
@@ -33,47 +33,22 @@ int main()
             scanf("%d",&z[c][c]);
         }
         
-    }*/
-    int p1[a],p2[a],q[2]={0,0},r[2]={0,0};
+    }
+    printf("\n");
+
 
     for ( i = 0; i < a; i++)
     {
-        p1[i]=x[i][i];   
+        l=l+x[i][i];   
     }
     for ( i = 0; i < a; i++)
     {
         for ( j = a-1; j >0; j++)
         {
-            p2[i]=x[i][j];
+            o=o+x[i][j];
         }
     }
-    for ( i = 0; i < a; i++)
-    {
-       l+=p1[i];
-       o+=p2[i];
-    }
-    printf("%d %d",l,o);
-
-     /*if (p[0]==p[1])
-    {
-       printf("N0");
-    }
-    else
-    {
-        "Yes";
-    }*/
-    /* for ( i = 0; i < a; i++)
-    {
-        q[0]+=x[i][i];   
-    }
-    for ( i = 0; i < a; i++)
-    {
-        for ( j = a-1; j >0; j++)
-        {
-            q[1]+=x[i][j];
-        }
-    }
-     if (q[0]==q[1])
+     if (l==o)
     {
        printf("N0");
     }
@@ -81,25 +56,48 @@ int main()
     {
         "Yes";
     }
+    l=0;o=0;
      for ( i = 0; i < a; i++)
     {
-        r[0]+=x[i][i];   
+        l=l+x[i][i];   
     }
     for ( i = 0; i < a; i++)
     {
         for ( j = a-1; j >0; j++)
         {
-            r[1]+=x[i][j];
+           o=o+x[i][j];
         }
     }
-     if (r[0]==r[1])
+
+     if (l==o)
     {
        printf("N0");
     }
     else
     {
         "Yes";
-    }  */
+    } 
+    l=0;o=0;
+     
+     for ( i = 0; i < a; i++)
+    {
+        l=l+x[i][i];   
+    }
+    for ( i = 0; i < a; i++)
+    {
+        for ( j = a-1; j >0; j++)
+        {
+            o=o+x[i][j];
+        }
+    }
+     if (l==o)
+    {
+       printf("N0");
+    }
+    else
+    {
+        "Yes";
+    }  
     
    
 }
